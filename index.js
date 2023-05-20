@@ -50,7 +50,7 @@ async function run() {
 
 
     //get by email
-    app.get('/addToy', async (req, res) => {
+    app.get('/addToy1', async (req, res) => {
       console.log(req.query.email);
       let query = {};
       if (req.query?.email) {
