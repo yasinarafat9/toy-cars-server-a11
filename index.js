@@ -60,6 +60,16 @@ async function run() {
       res.send(result);
     })
 
+    // app.get('/addToySubcategory', async (req, res) => {
+    //   console.log(req.query.subcategory);
+    //   let query = {};
+    //   if (req.query?.subcategory) {
+    //     query = { subcategory: req.query.subcategory }
+    //   }
+    //   const result = await toysCollection.find(query).toArray();
+    //   res.send(result);
+    // })
+
     //delete
     app.delete('/addToy/:id', async (req, res) => {
       const id = req.params.id;
